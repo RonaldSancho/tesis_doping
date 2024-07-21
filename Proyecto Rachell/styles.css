@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; /* Asegúrate de que no haya padding por defecto */
+    font-family: Arial, sans-serif;
+    width: 100%; /* Se asegura de usar el ancho completo del viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Elimina el padding para que el contenido use todo el espacio disponible */
+}
+
+main {
+    flex: 1;
+    padding: 0; /* Remueve el padding estándar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Se asegura de que main ocupe todo el ancho */
+}
+
+.section {
+    width: 100%; /* Ajusta al 100% del contenedor para evitar márgenes innecesarios */
+    max-width: 100%; /* Elimina cualquier limitación de ancho máximo */
+    margin-bottom: 2rem;
+    text-align: right; /* Asegura que el contenido se alinee a la derecha */
+}
+
+.text-left h2, .text-left p {
+    text-align: left;
+}
+
+.content-section-medicamentos {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    width: 50%; /* Define el ancho máximo del content-section */
+    margin-left: 100; /* Empuja el content-section hacia el lado izquierdo */
+    margin-right: auto; /* Centra el content-section si es necesario */
+}
+
+.content-section-infecciones {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    width: 50%; /* Define el ancho máximo del content-section */
+    margin-left: auto; /* Empuja el content-section hacia el lado izquierdo */
+    margin-right: 100; /* Centra el content-section si es necesario */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* CSS adicional para ajustar el tamaño de los títulos del Collapse */
+.collapse-title {
+    font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
+    color: #000000;
+    text-decoration: none;
+}
+
+.collapse-title:hover {
+    text-decoration: underline;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.dropdown-container.align-right .dropdown-menu, 
+.dropdown.align-right .dropdown-menu {
+    right: 0; /* Asegura que el menú desplegable se alinea a la derecha */
+}
+
+.dropdown-container.align-left .dropdown-menu, 
+.dropdown.align-left .dropdown-menu {
+    left: 0; /* Asegura que el menú desplegable se alinea a la izquierda */
+}
+
+.dropdown-container, .dropdown {
+    width: 100%; /* Asegura que el contenedor del dropdown ocupe todo el ancho disponible */
+}
