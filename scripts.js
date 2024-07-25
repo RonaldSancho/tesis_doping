@@ -18,7 +18,7 @@ function showContent(event, id, text, introTextId) {
     document.getElementById(introTextId).innerHTML = text;
 
     // Oculta todas las secciones de contenido
-    document.querySelectorAll('.content-section').forEach(section => {
+    document.querySelectorAll('.content-section-medicamentos').forEach(section => {
         section.style.display = 'none';
     });
 
