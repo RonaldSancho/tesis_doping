@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediDopeInfo - Afecciones Respiratorias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html#home">MediDopeInfo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#home">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="medicamentos.html">Sustancias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="afecciones.html">Afecciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">Recomendaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container d-flex justify-content-between mt-4">
+            <section id="afeccioones" class="section text-center">
+
+                <section id="introTextAfeccions" class="section text-left">
+
+                    <h2>Listas de afecciones respiratorias 2024</h2>
+                    <p id="introTextAfecciones">En MediDopeInfo, reconocemos la crucial importancia de la salud
+                        respiratoria
+                        en el
+                        ámbito deportivo.
+                        <br> Proporcionamos un análisis exhaustivo de las afecciones respiratorias más comunes entre los
+                        atletas,
+                        <br> explorando sus causas, síntomas, tratamientos permitidos y las recomendaciones para su
+                        manejo
+                        eficaz.
+                    </p>
+
+                    <div class="dropdown mb-4">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seleccionar Afección
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'commonCold', 'El resfrío común, también conocido como rinofaringitis aguda, es una infección viral leve del tracto respiratorio superior que afecta principalmente la nariz y la garganta.', 'introTextAfecciones')">
+                                El resfrío común o rinofaringitis aguda
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'acutePharyngitis', 'La faringitis aguda es una inflamación dolorosa de la faringe, típicamente causada por infecciones virales o bacterianas, que puede incluir amigdalitis.', 'introTextAfecciones')">
+                                La faringitis aguda o amigdalitis faríngea
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'acuteSinusitis', 'La rinosinusitis aguda implica la inflamación de los senos paranasales y la cavidad nasal, que puede causar congestión nasal, dolor facial y presión.', 'introTextAfecciones')">
+                                Rinosinusitis aguda
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'influenza', 'La influenza, o gripe, es una enfermedad respiratoria viral que puede ser grave y es conocida por sus síntomas como fiebre, tos y fatiga.', 'introTextAfecciones')">
+                                Influenza
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'acuteBronchitis', 'La bronquitis aguda es una infección que inflama los conductos principales de aire hacia los pulmones, causando tos persistente y producción de moco.', 'introTextAfecciones')">
+                                Bronquitis aguda
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'cough', 'La tos es un reflejo natural que protege los pulmones, puede ser aguda o crónica y es un síntoma común de muchas enfermedades respiratorias.', 'introTextAfecciones')">
+                                Tos
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'asthma', 'El asma es una enfermedad crónica que inflama y estrecha las vías respiratorias, causando dificultad para respirar, sibilancias y opresión en el pecho.', 'introTextAfecciones')">
+                                Asma
+                            </a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                onclick="showContent(event, 'acuteOtitisMedia', 'La otitis media aguda es una infección del oído medio, común en niños, que puede causar dolor de oído intenso y a veces fiebre.', 'introTextAfecciones')">
+                                Otitis media aguda
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="content-section-infecciones text-left" id="commonCold" style="display: none;">
+
+                    <h3><a class="collapse-title" data-toggle="collapse" href="#collapseCommonCold" role="button"
+                            aria-expanded="false" aria-controls="collapseCommonCold">El resfrío común o rinofaringitis aguda</a></h3>
+                    <div class="collapse" id="collapseCommonCold">
+                        <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsCommonCold" role="button"
+                                aria-expanded="false" aria-controls="symptomsCommonCold">Síntomas</a></h4>
+                        <div class="collapse" id="symptomsCommonCold">
+                            <ul>
+                                <li>Malestar general</li>
+                                <li>Fiebre</li>
+                                <li>Estornudos</li>
+                                <li>Congestión nasal</li>
+                                <li>Rinorrea acuosa o mucoide</li>
+                                <li>Secreción posnasal</li>
+                                <li>Odinofagia</li>
+                                <li>Tos seca</li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsCommonCold" role="button"
+                                aria-expanded="false" aria-controls="treatmentsCommonCold">Posibles tratamientos</a></h4>
+                        <div class="collapse" id="treatmentsCommonCold">
+                            <p>Analgésicos y antipiréticos:</p>
+                            <ul>
+                                <li>Acetaminofén</li>
+                                <li>Ibuprofeno</li>
+                                <li>Diclofenaco</li>
+                                <li>Naproxeno</li>
+                            </ul>
+                            <p>Combinados:</p>
+                            <ul>
+                                <li>Cosisan</li>
+                                <li>Antiflus</li>
+                                <li>Alicol</li>
+                                <li>Paraconica plus</li>
+                            </ul>
+                            <p>Antihistamínicos:</p>
+                            <ul>
+                                <li>Clorfeniramina</li>
+                                <li>Rupatadina</li>
+                                <li>Cetirizina</li>
+                                <li>Fenilefrina</li>
+                            </ul>
+                            <p>Pseudoefedrina (regulado)</p>
+                            <p>No tratar con corticoesteroides:</p>
+                            <ul>
+                                <li>Acetónido de triamcinolona</li>
+                                <li>Beclometasona</li>
+                                <li>Betametasona</li>
+                                <li>Budesonida</li>
+                                <li>Ciclesonida</li>
+                                <li>Cortisona</li>
+                                <li>Deflazacort</li>
+                                <li>Dexametasona</li>
+                                <li>Flucortolona</li>
+                                <li>Flunisolida</li>
+                                <li>Fluticasona</li>
+                                <li>Hidrocortisona</li>
+                                <li>Metilprednisolona</li>
+                                <li>Mometasona</li>
+                                <li>Prednisolona</li>
+                                <li>Prednisona</li>
+                            </ul>
+                            <p>Tramadol prohibido en competencia.</p>
+                            <p>Opción natural:</p>
+                            <ul>
+                                <li>Biotos Inmune: Sidoides, Hedera Helix y Pelargonium</li>
+                                <li>Broncatar: Eucalyptus, Mentha</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 w-100">
+        <p>&copy; 2024 Rachell. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

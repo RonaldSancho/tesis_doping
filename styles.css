@@ -64,8 +64,8 @@ main {
     border-radius: 8px;
     background-color: #f8f8f8;
     width: 50%; /* Define el ancho máximo del content-section */
-    margin-left: auto; /* Empuja el content-section hacia el lado izquierdo */
-    margin-right: 100; /* Centra el content-section si es necesario */
+    margin-left: 100; /* Empuja el content-section hacia el lado izquierdo */
+    margin-right: auto; /* Centra el content-section si es necesario */
 }
 
 .btn-primary {
@@ -88,24 +88,3 @@ main {
     text-decoration: underline;
 }
 
-.align-right {
-    text-align: right;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.dropdown-container.align-right .dropdown-menu, 
-.dropdown.align-right .dropdown-menu {
-    right: 0; /* Asegura que el menú desplegable se alinea a la derecha */
-}
-
-.dropdown-container.align-left .dropdown-menu, 
-.dropdown.align-left .dropdown-menu {
-    left: 0; /* Asegura que el menú desplegable se alinea a la izquierda */
-}
-
-.dropdown-container, .dropdown {
-    width: 100%; /* Asegura que el contenedor del dropdown ocupe todo el ancho disponible */
-}

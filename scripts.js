@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fade in the body
     document.body.classList.add('loaded');
-    
+
     // Fade in the nav items one by one
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach((item, index) => {
