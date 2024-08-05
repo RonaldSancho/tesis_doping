@@ -2,628 +2,637 @@
 <html>
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> MediDopeInfo  </title>
+    <title> MediDopeInfo </title>
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              MediDopeInfo
-            </span>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sustancias.html"> Sustancias</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="afecciones.html">Afecciones <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="why.html">Recomendaciones</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-  </div>
-
-
-  <main class="container d-flex justify-content-between mt-4">
-    <section id="afeccioones" class="section text-center">
-
-        <section id="introTextAfeccions" class="section text-left">
-
-            <h2>Listas de afecciones respiratorias 2024</h2>
-            <p id="introTextAfecciones">En MediDopeInfo, reconocemos la crucial importancia de la salud
-                respiratoria
-                en el
-                ámbito deportivo.
-                <br> Proporcionamos un análisis exhaustivo de las afecciones respiratorias más comunes entre los
-                atletas,
-                <br> explorando sus causas, síntomas, tratamientos permitidos y las recomendaciones para su
-                manejo
-                eficaz.
-            </p>
-
-            <div class="dropdown mb-4">
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Seleccionar Afección
-                </button>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'commonCold', 'El resfrío común, también conocido como rinofaringitis aguda, es una infección viral leve del tracto respiratorio superior que afecta principalmente la nariz y la garganta.', 'introTextAfecciones')">
-                        El resfrío común o rinofaringitis aguda
+    <div class="hero_area">
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            MediDopeInfo
+                        </span>
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'acutePharyngitis', 'La faringitis aguda es una inflamación dolorosa de la faringe, típicamente causada por infecciones virales o bacterianas, que puede incluir amigdalitis.', 'introTextAfecciones')">
-                        La faringitis aguda o amigdalitis faríngea
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'acuteSinusitis', 'La rinosinusitis aguda implica la inflamación de los senos paranasales y la cavidad nasal, que puede causar congestión nasal, dolor facial y presión.', 'introTextAfecciones')">
-                        Rinosinusitis aguda
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'influenza', 'La influenza, o gripe, es una enfermedad respiratoria viral que puede ser grave y es conocida por sus síntomas como fiebre, tos y fatiga.', 'introTextAfecciones')">
-                        Influenza
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'acuteBronchitis', 'La bronquitis aguda es una infección que inflama los conductos principales de aire hacia los pulmones, causando tos persistente y producción de moco.', 'introTextAfecciones')">
-                        Bronquitis aguda
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'cough', 'La tos es un reflejo natural que protege los pulmones, puede ser aguda o crónica y es un síntoma común de muchas enfermedades respiratorias.', 'introTextAfecciones')">
-                        Tos
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'asthma', 'El asma es una enfermedad crónica que inflama y estrecha las vías respiratorias, causando dificultad para respirar, sibilancias y opresión en el pecho.', 'introTextAfecciones')">
-                        Asma
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);"
-                        onclick="showContentInfections(event, 'acuteOtitisMedia', 'La otitis media aguda es una infección del oído medio, común en niños, que puede causar dolor de oído intenso y a veces fiebre.', 'introTextAfecciones')">
-                        Otitis media aguda
-                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sustancias.html"> Sustancias</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="afecciones.html">Afecciones <span
+                                        class="sr-only">(current)</span> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="why.html">Recomendaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+    <main class="container d-flex justify-content-between mt-4">
+        <section id="afeccioones" class="section text-center">
+
+            <section id="introTextAfeccions" class="section text-left">
+
+                <h2>Listas de afecciones respiratorias 2024</h2>
+                <p id="introTextAfecciones">En MediDopeInfo, reconocemos la crucial importancia de la salud
+                    respiratoria
+                    en el
+                    ámbito deportivo.
+                    <br> Proporcionamos un análisis exhaustivo de las afecciones respiratorias más comunes entre los
+                    atletas,
+                    <br> explorando sus causas, síntomas, tratamientos permitidos y las recomendaciones para su
+                    manejo
+                    eficaz.
+                </p>
+
+                <div class="dropdown mb-4">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seleccionar Afección
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'commonCold', 'El resfrío común, también conocido como rinofaringitis aguda, es una infección viral leve del tracto respiratorio superior que afecta principalmente la nariz y la garganta.', 'introTextAfecciones')">
+                            El resfrío común o rinofaringitis aguda
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'acutePharyngitis', 'La faringitis aguda es una inflamación dolorosa de la faringe, típicamente causada por infecciones virales o bacterianas, que puede incluir amigdalitis.', 'introTextAfecciones')">
+                            La faringitis aguda o amigdalitis faríngea
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'acuteSinusitis', 'La rinosinusitis aguda implica la inflamación de los senos paranasales y la cavidad nasal, que puede causar congestión nasal, dolor facial y presión.', 'introTextAfecciones')">
+                            Rinosinusitis aguda
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'influenza', 'La influenza, o gripe, es una enfermedad respiratoria viral que puede ser grave y es conocida por sus síntomas como fiebre, tos y fatiga.', 'introTextAfecciones')">
+                            Influenza
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'acuteBronchitis', 'La bronquitis aguda es una infección que inflama los conductos principales de aire hacia los pulmones, causando tos persistente y producción de moco.', 'introTextAfecciones')">
+                            Bronquitis aguda
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'cough', 'La tos es un reflejo natural que protege los pulmones, puede ser aguda o crónica y es un síntoma común de muchas enfermedades respiratorias.', 'introTextAfecciones')">
+                            Tos
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'asthma', 'El asma es una enfermedad crónica que inflama y estrecha las vías respiratorias, causando dificultad para respirar, sibilancias y opresión en el pecho.', 'introTextAfecciones')">
+                            Asma
+                        </a>
+                        <a class="dropdown-item" href="javascript:void(0);"
+                            onclick="showContentInfections(event, 'acuteOtitisMedia', 'La otitis media aguda es una infección del oído medio, común en niños, que puede causar dolor de oído intenso y a veces fiebre.', 'introTextAfecciones')">
+                            Otitis media aguda
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content-section-infecciones text-left" id="commonCold" style="display: none;">
+
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseCommonCold" role="button"
+                        aria-expanded="false" aria-controls="collapseCommonCold">El resfrío común o rinofaringitis
+                        aguda</a></h3>
+                <div class="collapse" id="collapseCommonCold">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsCommonCold" role="button"
+                            aria-expanded="false" aria-controls="symptomsCommonCold">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsCommonCold">
+                        <ul>
+                            <li>Malestar general</li>
+                            <li>Fiebre</li>
+                            <li>Estornudos</li>
+                            <li>Congestión nasal</li>
+                            <li>Rinorrea acuosa o mucoide</li>
+                            <li>Secreción posnasal</li>
+                            <li>Odinofagia</li>
+                            <li>Tos seca</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsCommonCold" role="button"
+                            aria-expanded="false" aria-controls="treatmentsCommonCold">Posibles tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsCommonCold">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                            <li>Naproxeno</li>
+                        </ul>
+                        <p>Combinados:</p>
+                        <ul>
+                            <li>Cosisan</li>
+                            <li>Antiflus</li>
+                            <li>Alicol</li>
+                            <li>Paraconica plus</li>
+                        </ul>
+                        <p>Antihistamínicos:</p>
+                        <ul>
+                            <li>Clorfeniramina</li>
+                            <li>Rupatadina</li>
+                            <li>Cetirizina</li>
+                            <li>Fenilefrina</li>
+                        </ul>
+                        <p>Pseudoefedrina (regulado)</p>
+                        <p>No tratar con corticoesteroides:</p>
+                        <ul>
+                            <li>Acetónido de triamcinolona</li>
+                            <li>Beclometasona</li>
+                            <li>Betametasona</li>
+                            <li>Budesonida</li>
+                            <li>Ciclesonida</li>
+                            <li>Cortisona</li>
+                            <li>Deflazacort</li>
+                            <li>Dexametasona</li>
+                            <li>Flucortolona</li>
+                            <li>Flunisolida</li>
+                            <li>Fluticasona</li>
+                            <li>Hidrocortisona</li>
+                            <li>Metilprednisolona</li>
+                            <li>Mometasona</li>
+                            <li>Prednisolona</li>
+                            <li>Prednisona</li>
+                        </ul>
+                        <p>Tramadol prohibido en competencia.</p>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Biotos Inmune: Sidoides, Hedera Helix y Pelargonium</li>
+                            <li>Broncatar: Eucalyptus, Mentha</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <div class="content-section-infecciones text-left" id="acutePharyngitis" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcutePharyngitis" role="button"
+                        aria-expanded="false" aria-controls="collapseAcutePharyngitis">La faringitis aguda o amigdalitis
+                        faríngea</a></h3>
+                <div class="collapse" id="collapseAcutePharyngitis">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcutePharyngitis" role="button"
+                            aria-expanded="false" aria-controls="symptomsAcutePharyngitis">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsAcutePharyngitis">
+                        <ul>
+                            <li>Malestar general</li>
+                            <li>Fiebre</li>
+                            <li>Dolor de garganta al tragar</li>
+                            <li>Enrojecimiento de la faringe</li>
+                            <li>Ganglios cervicales inflamados</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcutePharyngitis"
+                            role="button" aria-expanded="false" aria-controls="treatmentsAcutePharyngitis">Posibles
+                            tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsAcutePharyngitis">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                        </ul>
+                        <p>No tratar con corticoesteroides, se encuentran regulados.</p>
+                        <p>Combinados:</p>
+                        <ul>
+                            <li>Cosisan</li>
+                            <li>Antiflus</li>
+                            <li>Alicol</li>
+                            <li>Paraconica plus</li>
+                        </ul>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Koflet Caramelos: Zingiber officinale, Syzygium aromaticum, Elettaria cardamomum,
+                                Cinnamomum verum</li>
+                            <li>Respifort solución: Pelargonium sidoides</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="acuteSinusitis" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteSinusitis" role="button"
+                        aria-expanded="false" aria-controls="collapseAcuteSinusitis">Rinosinusitis aguda</a></h3>
+                <div class="collapse" id="collapseAcuteSinusitis">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteSinusitis" role="button"
+                            aria-expanded="false" aria-controls="symptomsAcuteSinusitis">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsAcuteSinusitis">
+                        <ul>
+                            <li>Mal aliento o pérdida del sentido del olfato</li>
+                            <li>Cansancio y sensación de malestar general</li>
+                            <li>Fiebre</li>
+                            <li>Dolor de cabeza</li>
+                            <li>Dolor similar a presión</li>
+                            <li>Dolor detrás de los ojos</li>
+                            <li>Dolor de dientes o sensibilidad facial</li>
+                            <li>Congestión y secreción nasal</li>
+                            <li>Dolor de garganta y goteo retronasal</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteSinusitis" role="button"
+                            aria-expanded="false" aria-controls="treatmentsAcuteSinusitis">Posibles tratamientos</a>
+                    </h4>
+                    <div class="collapse" id="treatmentsAcuteSinusitis">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                        </ul>
+                        <p>Combinados:</p>
+                        <ul>
+                            <li>Cosisan</li>
+                            <li>Antiflus</li>
+                            <li>Alicol</li>
+                            <li>Paraconica plus</li>
+                        </ul>
+                        <p>Antihistamínicos:</p>
+                        <ul>
+                            <li>Clorfeniramina</li>
+                            <li>Rupatadina</li>
+                            <li>Cetirizina</li>
+                            <li>Fenilefrina</li>
+                            <li>Loratadina</li>
+                        </ul>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Neilmed</li>
+                            <li>Bresol Jarabe: Curcuma longa, Ocimum sanctum, Adhatoda vasica</li>
+                            <li>Zepol inhalado</li>
+                            <li>Bresol</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="influenza" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseInfluenza" role="button"
+                        aria-expanded="false" aria-controls="collapseInfluenza">Influenza</a></h3>
+                <div class="collapse" id="collapseInfluenza">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsInfluenza" role="button"
+                            aria-expanded="false" aria-controls="symptomsInfluenza">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsInfluenza">
+                        <ul>
+                            <li>Fiebre de inicio brusco (38-40 °C) que dura entre 1 y 5 días</li>
+                            <li>Malestar general</li>
+                            <li>Mialgias</li>
+                            <li>Cefalea</li>
+                            <li>Tos</li>
+                            <li>Síntomas respiratorios altos o síntomas digestivos</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsInfluenza" role="button"
+                            aria-expanded="false" aria-controls="treatmentsInfluenza">Posibles tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsInfluenza">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                            <li>Naproxeno</li>
+                            <li>Acidomefenamico</li>
+                        </ul>
+                        <p>Combinados:</p>
+                        <ul>
+                            <li>Cosisan</li>
+                            <li>Antiflus</li>
+                            <li>Alicol</li>
+                            <li>Paraconica plus</li>
+                            <li>Perebron</li>
+                        </ul>
+                        <p>Inmunoestimulantes:</p>
+                        <ul>
+                            <li>Respifort</li>
+                            <li>Jaquam</li>
+                        </ul>
+                        <p>Antihistamínicos:</p>
+                        <ul>
+                            <li>Clorfeniramina</li>
+                            <li>Rupatadina</li>
+                            <li>Cetirizina</li>
+                            <li>Fenilefrina</li>
+                            <li>Fexofenadina</li>
+                            <li>Loratadina</li>
+                        </ul>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Fisomin Solución Oral: Cetraria islándica, Hedera helix, Plantago lanceolata</li>
+                            <li>Septilin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="acuteBronchitis" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteBronchitis" role="button"
+                        aria-expanded="false" aria-controls="collapseAcuteBronchitis">Bronquitis aguda</a></h3>
+                <div class="collapse" id="collapseAcuteBronchitis">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteBronchitis" role="button"
+                            aria-expanded="false" aria-controls="symptomsAcuteBronchitis">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsAcuteBronchitis">
+                        <ul>
+                            <li>Tos con mucosidad</li>
+                            <li>Dolor de pecho</li>
+                            <li>Cansancio</li>
+                            <li>Fiebre baja</li>
+                            <li>Falta de aire</li>
+                            <li>Sibilancias</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteBronchitis" role="button"
+                            aria-expanded="false" aria-controls="treatmentsAcuteBronchitis">Posibles tratamientos</a>
+                    </h4>
+                    <div class="collapse" id="treatmentsAcuteBronchitis">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                            <li>Naproxeno</li>
+                            <li>Dexketoprofeno</li>
+                        </ul>
+                        <p>Inmunoestimulantes:</p>
+                        <ul>
+                            <li>Respifort</li>
+                            <li>Jaquam</li>
+                        </ul>
+                        <p>Fármacos mucolíticos:</p>
+                        <ul>
+                            <li>Fluimucil</li>
+                            <li>Mucosolvan</li>
+                            <li>Fludil</li>
+                        </ul>
+                        <p>Inmunoestimulantes del tracto respiratorio:</p>
+                        <ul>
+                            <li>Luivac</li>
+                            <li>Broncho-Vaxom</li>
+                        </ul>
+                        <p>No tratar con corticoesteroides:</p>
+                        <ul>
+                            <li>Acetónido de triamcinolona</li>
+                            <li>Beclometasona</li>
+                            <li>Betametasona</li>
+                            <li>Budesonida</li>
+                            <li>Ciclesonida</li>
+                            <li>Cortisona</li>
+                            <li>Deflazacort</li>
+                            <li>Dexametasona</li>
+                            <li>Flucortolona</li>
+                            <li>Flunisolida</li>
+                            <li>Fluticasona</li>
+                            <li>Hidrocortisona</li>
+                            <li>Metilprednisolona</li>
+                            <li>Mometasona</li>
+                            <li>Prednisolona</li>
+                            <li>Prednisona</li>
+                        </ul>
+                        <p>Esteroides prohibidos:</p>
+                        <ul>
+                            <li>Arformoterol</li>
+                            <li>Fenoterol</li>
+                            <li>Formoterol</li>
+                            <li>Higenamina</li>
+                            <li>Indacaterol</li>
+                            <li>Levosalbutamol</li>
+                            <li>Olodaterol</li>
+                            <li>Procaterol</li>
+                            <li>Reproterol</li>
+                            <li>Salbutamol</li>
+                            <li>Salmeterol</li>
+                            <li>Terbutalina</li>
+                            <li>Tretoquinol (Trimetoquinol)</li>
+                            <li>Tulobuterol</li>
+                            <li>Vilanterol</li>
+                        </ul>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Broncolito Jarabe Bronquial</li>
+                            <li>Broncolito Chest Balm</li>
+                            <li>Abrilar: Hedera helix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="cough" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseCough" role="button"
+                        aria-expanded="false" aria-controls="collapseCough">Tos</a></h3>
+                <div class="collapse" id="collapseCough">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsCough" role="button"
+                            aria-expanded="false" aria-controls="symptomsCough">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsCough">
+                        <ul>
+                            <li>Cansancio</li>
+                            <li>Problemas para dormir</li>
+                            <li>Mareos o desmayos</li>
+                            <li>Dolores de cabeza</li>
+                            <li>Incontinencia urinaria</li>
+                            <li>Vómitos</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsCough" role="button"
+                            aria-expanded="false" aria-controls="treatmentsCough">Posibles tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsCough">
+                        <p>Antihistamínicos:</p>
+                        <ul>
+                            <li>Clorfeniramina</li>
+                            <li>Rupatadina</li>
+                            <li>Cetirizina</li>
+                            <li>Fenilefrina</li>
+                            <li>Difenhidramina</li>
+                        </ul>
+                        <p>Inmunoestimulantes del tracto respiratorio:</p>
+                        <ul>
+                            <li>Luivac</li>
+                            <li>Broncho-Vaxom</li>
+                        </ul>
+                        <p>Fármacos mucolíticos:</p>
+                        <ul>
+                            <li>Fluimucil</li>
+                            <li>Mucosolvan</li>
+                            <li>Fludil</li>
+                            <li>Abrilar</li>
+                        </ul>
+                        <p>Fármacos antitusivos:</p>
+                        <ul>
+                            <li>Toscal: Dextrometorfano</li>
+                            <li>Saludex: Cloperastina</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="asthma" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAsthma" role="button"
+                        aria-expanded="false" aria-controls="collapseAsthma">Asma</a></h3>
+                <div class="collapse" id="collapseAsthma">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAsthma" role="button"
+                            aria-expanded="false" aria-controls="symptomsAsthma">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsAsthma">
+                        <ul>
+                            <li>Tos persistente, sobre todo por la noche</li>
+                            <li>Sibilancias al espirar y, a veces, al inspirar</li>
+                            <li>Disnea o dificultad para respirar, a veces incluso en reposo</li>
+                            <li>Opresión en el pecho que no permite respirar profundamente</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAsthma" role="button"
+                            aria-expanded="false" aria-controls="treatmentsAsthma">Posibles tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsAsthma">
+                        <p>Analgésicos selectivos:</p>
+                        <ul>
+                            <li>Celecoxib</li>
+                            <li>Etoricoxib</li>
+                            <li>Parecoxib</li>
+                        </ul>
+                        <p>Inmunoestimulantes:</p>
+                        <ul>
+                            <li>Respifort</li>
+                            <li>Jaquam</li>
+                        </ul>
+                        <p>Inmunoestimulantes del tracto respiratorio:</p>
+                        <ul>
+                            <li>Luivac</li>
+                            <li>Broncho-Vaxom</li>
+                        </ul>
+                        <p>No tratar con corticoesteroides:</p>
+                        <ul>
+                            <li>Acetónido de triamcinolona</li>
+                            <li>Beclometasona</li>
+                            <li>Betametasona</li>
+                            <li>Budesonida</li>
+                            <li>Ciclesonida</li>
+                            <li>Cortisona</li>
+                            <li>Deflazacort</li>
+                            <li>Dexametasona</li>
+                            <li>Flucortolona</li>
+                            <li>Flunisolida</li>
+                            <li>Fluticasona</li>
+                            <li>Hidrocortisona</li>
+                            <li>Metilprednisolona</li>
+                            <li>Mometasona</li>
+                            <li>Prednisolona</li>
+                            <li>Prednisona</li>
+                        </ul>
+                        <p>Glucocorticoides prohibidos:</p>
+                        <ul>
+                            <li>Arformoterol</li>
+                            <li>Fenoterol</li>
+                            <li>Formoterol</li>
+                            <li>Higenamina</li>
+                            <li>Indacaterol</li>
+                            <li>Levosalbutamol</li>
+                            <li>Olodaterol</li>
+                            <li>Procaterol</li>
+                            <li>Reproterol</li>
+                            <li>Salbutamol</li>
+                            <li>Salmeterol</li>
+                            <li>Terbutalina</li>
+                            <li>Tretoquinol (Trimetoquinol)</li>
+                            <li>Tulobuterol</li>
+                            <li>Vilanterol</li>
+                        </ul>
+                        <p>Opción natural:</p>
+                        <ul>
+                            <li>Diakof</li>
+                            <li>Broncolix B2 emulsión</li>
+                            <li>Bronquial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section-infecciones text-left" id="acuteOtitisMedia" style="display: none;">
+                <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteOtitisMedia" role="button"
+                        aria-expanded="false" aria-controls="collapseAcuteOtitisMedia">Otitis media aguda</a></h3>
+                <div class="collapse" id="collapseAcuteOtitisMedia">
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteOtitisMedia" role="button"
+                            aria-expanded="false" aria-controls="symptomsAcuteOtitisMedia">Síntomas</a></h4>
+                    <div class="collapse" id="symptomsAcuteOtitisMedia">
+                        <ul>
+                            <li>Otalgia</li>
+                            <li>Fiebre</li>
+                            <li>Irritabilidad</li>
+                            <li>Otorrea</li>
+                            <li>Inflamación de la membrana timpánica</li>
+                            <li>Engrosamiento de la membrana timpánica</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteOtitisMedia"
+                            role="button" aria-expanded="false" aria-controls="treatmentsAcuteOtitisMedia">Posibles
+                            tratamientos</a></h4>
+                    <div class="collapse" id="treatmentsAcuteOtitisMedia">
+                        <p>Analgésicos y antipiréticos:</p>
+                        <ul>
+                            <li>Acetaminofén</li>
+                            <li>Ibuprofeno</li>
+                            <li>Diclofenaco</li>
+                            <li>Naproxeno</li>
+                            <li>Acidomefenamico</li>
+                            <li>Dexketoprofeno</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
-        
-        <div class="content-section-infecciones text-left" id="commonCold" style="display: none;">
+    </main>
 
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseCommonCold" role="button"
-                    aria-expanded="false" aria-controls="collapseCommonCold">El resfrío común o rinofaringitis aguda</a></h3>
-            <div class="collapse" id="collapseCommonCold">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsCommonCold" role="button"
-                        aria-expanded="false" aria-controls="symptomsCommonCold">Síntomas</a></h4>
-                <div class="collapse" id="symptomsCommonCold">
-                    <ul>
-                        <li>Malestar general</li>
-                        <li>Fiebre</li>
-                        <li>Estornudos</li>
-                        <li>Congestión nasal</li>
-                        <li>Rinorrea acuosa o mucoide</li>
-                        <li>Secreción posnasal</li>
-                        <li>Odinofagia</li>
-                        <li>Tos seca</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsCommonCold" role="button"
-                        aria-expanded="false" aria-controls="treatmentsCommonCold">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsCommonCold">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                        <li>Naproxeno</li>
-                    </ul>
-                    <p>Combinados:</p>
-                    <ul>
-                        <li>Cosisan</li>
-                        <li>Antiflus</li>
-                        <li>Alicol</li>
-                        <li>Paraconica plus</li>
-                    </ul>
-                    <p>Antihistamínicos:</p>
-                    <ul>
-                        <li>Clorfeniramina</li>
-                        <li>Rupatadina</li>
-                        <li>Cetirizina</li>
-                        <li>Fenilefrina</li>
-                    </ul>
-                    <p>Pseudoefedrina (regulado)</p>
-                    <p>No tratar con corticoesteroides:</p>
-                    <ul>
-                        <li>Acetónido de triamcinolona</li>
-                        <li>Beclometasona</li>
-                        <li>Betametasona</li>
-                        <li>Budesonida</li>
-                        <li>Ciclesonida</li>
-                        <li>Cortisona</li>
-                        <li>Deflazacort</li>
-                        <li>Dexametasona</li>
-                        <li>Flucortolona</li>
-                        <li>Flunisolida</li>
-                        <li>Fluticasona</li>
-                        <li>Hidrocortisona</li>
-                        <li>Metilprednisolona</li>
-                        <li>Mometasona</li>
-                        <li>Prednisolona</li>
-                        <li>Prednisona</li>
-                    </ul>
-                    <p>Tramadol prohibido en competencia.</p>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Biotos Inmune: Sidoides, Hedera Helix y Pelargonium</li>
-                        <li>Broncatar: Eucalyptus, Mentha</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <footer class="bg-dark text-white text-center py-3 w-100">
+        <p>&copy; 2024 Rachell. Todos los derechos reservados.</p>
+    </footer>
 
-        <div class="content-section-infecciones text-left" id="acutePharyngitis" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcutePharyngitis" role="button"
-                    aria-expanded="false" aria-controls="collapseAcutePharyngitis">La faringitis aguda o amigdalitis faríngea</a></h3>
-            <div class="collapse" id="collapseAcutePharyngitis">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcutePharyngitis" role="button"
-                        aria-expanded="false" aria-controls="symptomsAcutePharyngitis">Síntomas</a></h4>
-                <div class="collapse" id="symptomsAcutePharyngitis">
-                    <ul>
-                        <li>Malestar general</li>
-                        <li>Fiebre</li>
-                        <li>Dolor de garganta al tragar</li>
-                        <li>Enrojecimiento de la faringe</li>
-                        <li>Ganglios cervicales inflamados</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcutePharyngitis" role="button"
-                        aria-expanded="false" aria-controls="treatmentsAcutePharyngitis">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsAcutePharyngitis">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                    </ul>
-                    <p>No tratar con corticoesteroides, se encuentran regulados.</p>
-                    <p>Combinados:</p>
-                    <ul>
-                        <li>Cosisan</li>
-                        <li>Antiflus</li>
-                        <li>Alicol</li>
-                        <li>Paraconica plus</li>
-                    </ul>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Koflet Caramelos: Zingiber officinale, Syzygium aromaticum, Elettaria cardamomum, Cinnamomum verum</li>
-                        <li>Respifort solución: Pelargonium sidoides</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-section-infecciones text-left" id="acuteSinusitis" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteSinusitis" role="button"
-                    aria-expanded="false" aria-controls="collapseAcuteSinusitis">Rinosinusitis aguda</a></h3>
-            <div class="collapse" id="collapseAcuteSinusitis">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteSinusitis" role="button"
-                        aria-expanded="false" aria-controls="symptomsAcuteSinusitis">Síntomas</a></h4>
-                <div class="collapse" id="symptomsAcuteSinusitis">
-                    <ul>
-                        <li>Mal aliento o pérdida del sentido del olfato</li>
-                        <li>Cansancio y sensación de malestar general</li>
-                        <li>Fiebre</li>
-                        <li>Dolor de cabeza</li>
-                        <li>Dolor similar a presión</li>
-                        <li>Dolor detrás de los ojos</li>
-                        <li>Dolor de dientes o sensibilidad facial</li>
-                        <li>Congestión y secreción nasal</li>
-                        <li>Dolor de garganta y goteo retronasal</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteSinusitis" role="button"
-                        aria-expanded="false" aria-controls="treatmentsAcuteSinusitis">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsAcuteSinusitis">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                    </ul>
-                    <p>Combinados:</p>
-                    <ul>
-                        <li>Cosisan</li>
-                        <li>Antiflus</li>
-                        <li>Alicol</li>
-                        <li>Paraconica plus</li>
-                    </ul>
-                    <p>Antihistamínicos:</p>
-                    <ul>
-                        <li>Clorfeniramina</li>
-                        <li>Rupatadina</li>
-                        <li>Cetirizina</li>
-                        <li>Fenilefrina</li>
-                        <li>Loratadina</li>
-                    </ul>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Neilmed</li>
-                        <li>Bresol Jarabe: Curcuma longa, Ocimum sanctum, Adhatoda vasica</li>
-                        <li>Zepol inhalado</li>
-                        <li>Bresol</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content-section-infecciones text-left" id="influenza" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseInfluenza" role="button"
-                    aria-expanded="false" aria-controls="collapseInfluenza">Influenza</a></h3>
-            <div class="collapse" id="collapseInfluenza">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsInfluenza" role="button"
-                        aria-expanded="false" aria-controls="symptomsInfluenza">Síntomas</a></h4>
-                <div class="collapse" id="symptomsInfluenza">
-                    <ul>
-                        <li>Fiebre de inicio brusco (38-40 °C) que dura entre 1 y 5 días</li>
-                        <li>Malestar general</li>
-                        <li>Mialgias</li>
-                        <li>Cefalea</li>
-                        <li>Tos</li>
-                        <li>Síntomas respiratorios altos o síntomas digestivos</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsInfluenza" role="button"
-                        aria-expanded="false" aria-controls="treatmentsInfluenza">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsInfluenza">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                        <li>Naproxeno</li>
-                        <li>Acidomefenamico</li>
-                    </ul>
-                    <p>Combinados:</p>
-                    <ul>
-                        <li>Cosisan</li>
-                        <li>Antiflus</li>
-                        <li>Alicol</li>
-                        <li>Paraconica plus</li>
-                        <li>Perebron</li>
-                    </ul>
-                    <p>Inmunoestimulantes:</p>
-                    <ul>
-                        <li>Respifort</li>
-                        <li>Jaquam</li>
-                    </ul>
-                    <p>Antihistamínicos:</p>
-                    <ul>
-                        <li>Clorfeniramina</li>
-                        <li>Rupatadina</li>
-                        <li>Cetirizina</li>
-                        <li>Fenilefrina</li>
-                        <li>Fexofenadina</li>
-                        <li>Loratadina</li>
-                    </ul>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Fisomin Solución Oral: Cetraria islándica, Hedera helix, Plantago lanceolata</li>
-                        <li>Septilin</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content-section-infecciones text-left" id="acuteBronchitis" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteBronchitis" role="button"
-                    aria-expanded="false" aria-controls="collapseAcuteBronchitis">Bronquitis aguda</a></h3>
-            <div class="collapse" id="collapseAcuteBronchitis">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteBronchitis" role="button"
-                        aria-expanded="false" aria-controls="symptomsAcuteBronchitis">Síntomas</a></h4>
-                <div class="collapse" id="symptomsAcuteBronchitis">
-                    <ul>
-                        <li>Tos con mucosidad</li>
-                        <li>Dolor de pecho</li>
-                        <li>Cansancio</li>
-                        <li>Fiebre baja</li>
-                        <li>Falta de aire</li>
-                        <li>Sibilancias</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteBronchitis" role="button"
-                        aria-expanded="false" aria-controls="treatmentsAcuteBronchitis">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsAcuteBronchitis">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                        <li>Naproxeno</li>
-                        <li>Dexketoprofeno</li>
-                    </ul>
-                    <p>Inmunoestimulantes:</p>
-                    <ul>
-                        <li>Respifort</li>
-                        <li>Jaquam</li>
-                    </ul>
-                    <p>Fármacos mucolíticos:</p>
-                    <ul>
-                        <li>Fluimucil</li>
-                        <li>Mucosolvan</li>
-                        <li>Fludil</li>
-                    </ul>
-                    <p>Inmunoestimulantes del tracto respiratorio:</p>
-                    <ul>
-                        <li>Luivac</li>
-                        <li>Broncho-Vaxom</li>
-                    </ul>
-                    <p>No tratar con corticoesteroides:</p>
-                    <ul>
-                        <li>Acetónido de triamcinolona</li>
-                        <li>Beclometasona</li>
-                        <li>Betametasona</li>
-                        <li>Budesonida</li>
-                        <li>Ciclesonida</li>
-                        <li>Cortisona</li>
-                        <li>Deflazacort</li>
-                        <li>Dexametasona</li>
-                        <li>Flucortolona</li>
-                        <li>Flunisolida</li>
-                        <li>Fluticasona</li>
-                        <li>Hidrocortisona</li>
-                        <li>Metilprednisolona</li>
-                        <li>Mometasona</li>
-                        <li>Prednisolona</li>
-                        <li>Prednisona</li>
-                    </ul>
-                    <p>Esteroides prohibidos:</p>
-                    <ul>
-                        <li>Arformoterol</li>
-                        <li>Fenoterol</li>
-                        <li>Formoterol</li>
-                        <li>Higenamina</li>
-                        <li>Indacaterol</li>
-                        <li>Levosalbutamol</li>
-                        <li>Olodaterol</li>
-                        <li>Procaterol</li>
-                        <li>Reproterol</li>
-                        <li>Salbutamol</li>
-                        <li>Salmeterol</li>
-                        <li>Terbutalina</li>
-                        <li>Tretoquinol (Trimetoquinol)</li>
-                        <li>Tulobuterol</li>
-                        <li>Vilanterol</li>
-                    </ul>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Broncolito Jarabe Bronquial</li>
-                        <li>Broncolito Chest Balm</li>
-                        <li>Abrilar: Hedera helix</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content-section-infecciones text-left" id="cough" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseCough" role="button"
-                    aria-expanded="false" aria-controls="collapseCough">Tos</a></h3>
-            <div class="collapse" id="collapseCough">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsCough" role="button"
-                        aria-expanded="false" aria-controls="symptomsCough">Síntomas</a></h4>
-                <div class="collapse" id="symptomsCough">
-                    <ul>
-                        <li>Cansancio</li>
-                        <li>Problemas para dormir</li>
-                        <li>Mareos o desmayos</li>
-                        <li>Dolores de cabeza</li>
-                        <li>Incontinencia urinaria</li>
-                        <li>Vómitos</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsCough" role="button"
-                        aria-expanded="false" aria-controls="treatmentsCough">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsCough">
-                    <p>Antihistamínicos:</p>
-                    <ul>
-                        <li>Clorfeniramina</li>
-                        <li>Rupatadina</li>
-                        <li>Cetirizina</li>
-                        <li>Fenilefrina</li>
-                        <li>Difenhidramina</li>
-                    </ul>
-                    <p>Inmunoestimulantes del tracto respiratorio:</p>
-                    <ul>
-                        <li>Luivac</li>
-                        <li>Broncho-Vaxom</li>
-                    </ul>
-                    <p>Fármacos mucolíticos:</p>
-                    <ul>
-                        <li>Fluimucil</li>
-                        <li>Mucosolvan</li>
-                        <li>Fludil</li>
-                        <li>Abrilar</li>
-                    </ul>
-                    <p>Fármacos antitusivos:</p>
-                    <ul>
-                        <li>Toscal: Dextrometorfano</li>
-                        <li>Saludex: Cloperastina</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content-section-infecciones text-left" id="asthma" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAsthma" role="button"
-                    aria-expanded="false" aria-controls="collapseAsthma">Asma</a></h3>
-            <div class="collapse" id="collapseAsthma">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAsthma" role="button"
-                        aria-expanded="false" aria-controls="symptomsAsthma">Síntomas</a></h4>
-                <div class="collapse" id="symptomsAsthma">
-                    <ul>
-                        <li>Tos persistente, sobre todo por la noche</li>
-                        <li>Sibilancias al espirar y, a veces, al inspirar</li>
-                        <li>Disnea o dificultad para respirar, a veces incluso en reposo</li>
-                        <li>Opresión en el pecho que no permite respirar profundamente</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAsthma" role="button"
-                        aria-expanded="false" aria-controls="treatmentsAsthma">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsAsthma">
-                    <p>Analgésicos selectivos:</p>
-                    <ul>
-                        <li>Celecoxib</li>
-                        <li>Etoricoxib</li>
-                        <li>Parecoxib</li>
-                    </ul>
-                    <p>Inmunoestimulantes:</p>
-                    <ul>
-                        <li>Respifort</li>
-                        <li>Jaquam</li>
-                    </ul>
-                    <p>Inmunoestimulantes del tracto respiratorio:</p>
-                    <ul>
-                        <li>Luivac</li>
-                        <li>Broncho-Vaxom</li>
-                    </ul>
-                    <p>No tratar con corticoesteroides:</p>
-                    <ul>
-                        <li>Acetónido de triamcinolona</li>
-                        <li>Beclometasona</li>
-                        <li>Betametasona</li>
-                        <li>Budesonida</li>
-                        <li>Ciclesonida</li>
-                        <li>Cortisona</li>
-                        <li>Deflazacort</li>
-                        <li>Dexametasona</li>
-                        <li>Flucortolona</li>
-                        <li>Flunisolida</li>
-                        <li>Fluticasona</li>
-                        <li>Hidrocortisona</li>
-                        <li>Metilprednisolona</li>
-                        <li>Mometasona</li>
-                        <li>Prednisolona</li>
-                        <li>Prednisona</li>
-                    </ul>
-                    <p>Glucocorticoides prohibidos:</p>
-                    <ul>
-                        <li>Arformoterol</li>
-                        <li>Fenoterol</li>
-                        <li>Formoterol</li>
-                        <li>Higenamina</li>
-                        <li>Indacaterol</li>
-                        <li>Levosalbutamol</li>
-                        <li>Olodaterol</li>
-                        <li>Procaterol</li>
-                        <li>Reproterol</li>
-                        <li>Salbutamol</li>
-                        <li>Salmeterol</li>
-                        <li>Terbutalina</li>
-                        <li>Tretoquinol (Trimetoquinol)</li>
-                        <li>Tulobuterol</li>
-                        <li>Vilanterol</li>
-                    </ul>
-                    <p>Opción natural:</p>
-                    <ul>
-                        <li>Diakof</li>
-                        <li>Broncolix B2 emulsión</li>
-                        <li>Bronquial</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content-section-infecciones text-left" id="acuteOtitisMedia" style="display: none;">
-            <h3><a class="collapse-title" data-toggle="collapse" href="#collapseAcuteOtitisMedia" role="button"
-                    aria-expanded="false" aria-controls="collapseAcuteOtitisMedia">Otitis media aguda</a></h3>
-            <div class="collapse" id="collapseAcuteOtitisMedia">
-                <h4><a class="collapse-title" data-toggle="collapse" href="#symptomsAcuteOtitisMedia" role="button"
-                        aria-expanded="false" aria-controls="symptomsAcuteOtitisMedia">Síntomas</a></h4>
-                <div class="collapse" id="symptomsAcuteOtitisMedia">
-                    <ul>
-                        <li>Otalgia</li>
-                        <li>Fiebre</li>
-                        <li>Irritabilidad</li>
-                        <li>Otorrea</li>
-                        <li>Inflamación de la membrana timpánica</li>
-                        <li>Engrosamiento de la membrana timpánica</li>
-                    </ul>
-                </div>
-                <hr>
-                <h4><a class="collapse-title" data-toggle="collapse" href="#treatmentsAcuteOtitisMedia" role="button"
-                        aria-expanded="false" aria-controls="treatmentsAcuteOtitisMedia">Posibles tratamientos</a></h4>
-                <div class="collapse" id="treatmentsAcuteOtitisMedia">
-                    <p>Analgésicos y antipiréticos:</p>
-                    <ul>
-                        <li>Acetaminofén</li>
-                        <li>Ibuprofeno</li>
-                        <li>Diclofenaco</li>
-                        <li>Naproxeno</li>
-                        <li>Acidomefenamico</li>
-                        <li>Dexketoprofeno</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        
-    </section>
-</main>
-
-  <footer class="bg-dark text-white text-center py-3 w-100">
-    <p>&copy; 2024 Rachell. Todos los derechos reservados.</p>
-  </footer>
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
     </script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <script type="text/javascript" src="js/custom.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
 
 </body>
 
