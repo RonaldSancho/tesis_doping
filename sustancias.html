@@ -65,9 +65,8 @@
   <main class="container mt-4">
     <section id="medications" class="text-center">
       <h2>Listas de Sustancias Prohibidas 2024</h2>
-      <p>En MediDopeInfo, entendemos la importancia de la salud y el rendimiento en el deporte.</p>
-      <p>Proporcionamos información detallada sobre los medicamentos permitidos y prohibidos, sus efectos y
-        recomendaciones de uso.</p>
+      <p id="introTextMedicationsParagraph">En MediDopeInfo, entendemos la importancia de la salud y el rendimiento en
+        el deporte.</p>
 
       <!-- Dropdown Menu para seleccionar categorías -->
       <div class="dropdown mb-4">
@@ -77,278 +76,458 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="javascript:void(0);"
-            onclick="showContentCards(event, 'alwaysProhibited')">Sustancias Prohibidas Siempre</a>
+            onclick="showContentCards(event, 'alwaysProhibited', 'SUSTANCIAS Y MÉTODOS PROHIBIDOS SIEMPRE (EN Y FUERA DE COMPETICIÓN).')">Sustancias
+            Prohibidas Siempre</a>
           <a class="dropdown-item" href="javascript:void(0);"
-            onclick="showContentCards(event, 'inCompetition')">Sustancias Prohibidas En Competición</a>
+            onclick="showContentCards(event, 'inCompetition', 'SUSTANCIAS Y MÉTODOS PROHIBIDOS EN COMPETICIÓN.')">Sustancias
+            Prohibidas En Competición</a>
           <a class="dropdown-item" href="javascript:void(0);"
-            onclick="showContentCards(event, 'certainSports')">Sustancias Prohibidas en Ciertos Deportes</a>
-          <!-- Agrega más categorías si es necesario -->
+            onclick="showContentCards(event, 'certainSports', 'SUSTANCIAS PROHIBIDAS EN CIERTOS DEPORTES.')">Sustancias
+            Prohibidas en Ciertos Deportes</a>
         </div>
       </div>
 
-      <div class="content-section-cards" id="alwaysProhibited" style="display: none;">
-        <div class="row">
-          <!-- Tarjeta 1: Agentes Anabolizantes -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Agentes Anabolizantes</h5>
-                <p class="card-text">Los agentes anabolizantes están prohibidos debido a su capacidad para mejorar el
-                  rendimiento físico y muscular.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS1"
-                  aria-expanded="false" aria-controls="collapseS1">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS1">
-                  <ul>
-                    <li><strong>Esteroides Anabolizantes Androgénicos (EAA):</strong> Sustancias como 1-androstenediol,
-                      testosterona, metiltestosterona, bolasterona, y nandrolona entre otros.</li>
-                    <li><strong>Otros Agentes Anabolizantes:</strong> Incluyen Clenbuterol y Moduladores selectivos del
-                      receptor de andrógeno (SARMs) como andarina y ostarina, además de zeranol y zilpaterol.</li>
-                  </ul>
-                  <p>Estas sustancias están diseñadas para optimizar el rendimiento deportivo y terapéutico mientras
-                    potencialmente evaden la detección en pruebas antidopaje.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 2: Hormonas Peptídicas -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Hormonas Peptídicas, Factores de Crecimiento</h5>
-                <p class="card-text">Esta categoría incluye sustancias con capacidad para alterar procesos biológicos
-                  fundamentales en el deporte.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS2"
-                  aria-expanded="false" aria-controls="collapseS2">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS2">
-                  <ul>
-                    <li><strong>Eritropoyetinas (EPO):</strong> Ejemplos incluyen darbepoyetina (dEPO) y EPO.</li>
-                    <li><strong>Agentes Activadores del Factor Inducible por Hipoxia (HIF):</strong> Incluyendo cobalto,
-                      daprodustat, y roxadustat.</li>
-                    <li><strong>Hormonas Peptídicas:</strong> Como la Gonadotrofina coriónica (CG) y la Hormona de
-                      Crecimiento (GH).</li>
-                  </ul>
-                  <p>Estas sustancias pueden encontrarse en tratamientos para condiciones como anemia, pero su uso en el
-                    deporte está regulado.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 3: Agonistas Beta-2 -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Agonistas Beta-2</h5>
-                <p class="card-text">Los agonistas beta-2 están prohibidos, incluidos todos sus isómeros ópticos.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS3"
-                  aria-expanded="false" aria-controls="collapseS3">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS3">
-                  <ul>
-                    <li>Arformoterol</li>
-                    <li>Fenoterol</li>
-                    <li>Formoterol</li>
-                    <!-- Añade más elementos según sea necesario -->
-                  </ul>
-                  <p>Excepciones incluyen:</p>
-                  <ul>
-                    <li>Salbutamol por inhalación: dosis máxima de 1600 microgramos cada 24 horas.</li>
-                    <li>Formoterol por inhalación: dosis máxima de 54 microgramos cada 24 horas.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 4: Moduladores Hormonales y Metabólicos -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Moduladores Hormonales y Metabólicos</h5>
-                <p class="card-text">Los moduladores hormonales y metabólicos siguientes están prohibidos.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS4"
-                  aria-expanded="false" aria-controls="collapseS4">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS4">
-                  <ul>
-                    <li><strong>Moduladores Hormonales:</strong>
+      <div id="cardsContainer">
+        <div class="content-section-cards" id="alwaysProhibited" style="display: none;">
+          <div class="row">
+            <!-- Tarjeta 1: Agentes Anabolizantes -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Agentes Anabolizantes</h5>
+                  <p class="card-text">Los agentes anabolizantes están prohibidos en el deporte debido a su capacidad
+                    para mejorar el rendimiento físico y muscular. Esta clase de sustancias está prohibida tanto en
+                    competición como fuera de ella.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS1"
+                    aria-expanded="false" aria-controls="collapseS1">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS1">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>Esteroides Anabolizantes Androgénicos (EAA):</strong></h6>
                       <ul>
-                        <li>Aminoglutetimida</li>
-                        <li>Anastrozol</li>
-                        <li>Letrozol</li>
+                        <li>1-androstenediol (5α-androst-1-en-3β,17βdiol)</li>
+                        <li>1-androstenediona (5α-androst-1-en-3,17-diona)</li>
+                        <li>Testosterona</li>
+                        <li>Nandrolona</li>
+                        <li>Estanozolol</li>
+                        <li>Y muchos más...</li>
+                      </ul>
+                      <h6><strong>Otros Agentes Anabolizantes:</strong></h6>
+                      <ul>
+                        <li>Clenbuterol</li>
+                        <li>SARMs (p. ej., Andarina, Ostarina)</li>
+                        <li>Zeranol</li>
+                        <li>Zilpaterol</li>
+                      </ul>
+                      <p>Estas sustancias están diseñadas para optimizar el rendimiento deportivo y terapéutico,
+                        mientras que pueden evadir la detección en pruebas antidopaje. Su uso está estrictamente
+                        prohibido en cualquier circunstancia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2: Hormonas Peptídicas y Factores de Crecimiento -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Hormonas Peptídicas y Factores de Crecimiento</h5>
+                  <p class="card-text">Esta categoría incluye sustancias que pueden alterar procesos biológicos
+                    fundamentales en el deporte. Estas sustancias están prohibidas en cualquier circunstancia, tanto en
+                    competición como fuera de ella.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS2"
+                    aria-expanded="false" aria-controls="collapseS2">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS2">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>Eritropoyetinas (EPO) y Agentes que Afectan la Eritropoyesis:</strong></h6>
+                      <ul>
+                        <li>Agonistas del receptor de eritropoyetina, p. ej. darbepoyetina (dEPO), eritropoyetinas
+                          (EPO).</li>
+                        <li>Agentes activadores del factor inducible por hipoxia (HIF), p. ej. cobalto, daprodustat,
+                          roxadustat.</li>
+                        <li>Inhibidores de GATA, p. ej. K-11706.</li>
+                        <li>Inhibidores de la señalización del TGF-β, p. ej. luspatercept, sotatercept.</li>
+                        <li>Agonistas del receptor de reparación innato, p. ej. Asialo-EPO, EPO carbamilada.</li>
+                      </ul>
+                      <h6><strong>Hormonas Peptídicas y sus Factores de Liberación:</strong></h6>
+                      <ul>
+                        <li>Gonadotrofina coriónica (CG) y Hormona Luteinizante (LH), prohibidos sólo para hombres.</li>
+                        <li>Corticotrofinas y sus factores de liberación, p. ej. Corticorelina.</li>
+                        <li>Hormona de Crecimiento (GH), sus análogos y fragmentos, p. ej. lonapegsomatropina,
+                          somapacitan.</li>
+                        <li>Factores de liberación de la Hormona de Crecimiento, p. ej. GHRH, Secretagogos de GH, GHRPs.
+                        </li>
+                      </ul>
+                      <h6><strong>Factores de Crecimiento y Moduladores de Factores de Crecimiento:</strong></h6>
+                      <ul>
+                        <li>Factor de Crecimiento Derivado de Plaquetas (PDGF).</li>
+                        <li>Factor de Crecimiento de Tipo Insulínico-I (IGF-I) y sus análogos.</li>
+                        <li>Factores de Crecimiento Fibroblásticos (FGFs).</li>
+                        <li>Factor de Crecimiento del Endotelio Vascular (VEGF).</li>
+                        <li>Factor de Crecimiento de Hepatocitos (HGF).</li>
+                        <li>Factores Mecánicos de Crecimiento (MGF).</li>
+                        <li>Timosina-β4 y sus derivados, p. ej. TB-500.</li>
+                        <li>Otros factores de crecimiento que afecten la síntesis/degradación proteica, la
+                          vascularización, la utilización de energía, la capacidad regenerativa o el cambio de tipo de
+                          fibra muscular.</li>
+                      </ul>
+                      <p>Estas sustancias, aunque pueden tener aplicaciones médicas legítimas, están estrictamente
+                        prohibidas en el deporte debido a su potencial para mejorar el rendimiento de manera
+                        antinatural.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3: Agonistas Beta-2 -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Agonistas Beta-2</h5>
+                  <p class="card-text">Todos los agonistas beta-2 selectivos y no selectivos, incluidos todos los
+                    isómeros ópticos, están prohibidos.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS3"
+                    aria-expanded="false" aria-controls="collapseS3">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS3">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>Agonistas Beta-2 Prohibidos:</strong></h6>
+                      <ul>
+                        <li>Arformoterol</li>
+                        <li>Fenoterol</li>
+                        <li>Formoterol</li>
+                        <li>Higenamina</li>
+                        <li>Indacaterol</li>
+                        <li>Levosalbutamol</li>
+                        <li>Olodaterol</li>
+                        <li>Procaterol</li>
+                        <li>Reproterol</li>
+                        <li>Salbutamol</li>
+                        <li>Salmeterol</li>
+                        <li>Terbutalina</li>
+                        <li>Tretoquinol (Trimetoquinol)</li>
+                        <li>Tulobuterol</li>
+                        <li>Vilanterol</li>
                         <!-- Añade más elementos según sea necesario -->
                       </ul>
-                    </li>
-                    <li><strong>Sustancias Anti-Estrógenas:</strong>
+                      <h6><strong>Excepciones:</strong></h6>
+                      <ul>
+                        <li>Salbutamol por inhalación: dosis máxima de 1600 microgramos cada 24 horas, en dosis
+                          divididas que no excedan 600 microgramos en un periodo de 8 horas.</li>
+                        <li>Formoterol por inhalación: dosis máxima liberada de 54 microgramos cada 24 horas.</li>
+                        <li>Salmeterol por inhalación: dosis máxima de 200 microgramos cada 24 horas.</li>
+                        <li>Vilanterol por inhalación: dosis máxima de 25 microgramos cada 24 horas.</li>
+                      </ul>
+                      <p><strong>Nota:</strong> La presencia urinaria de salbutamol en una concentración mayor de 1000
+                        ng/mL o de formoterol en una concentración mayor de 40 ng/mL no es consistente con el uso
+                        terapéutico de la sustancia y se considerará un Resultado Analítico Adverso (RAA), a menos que
+                        el deportista demuestre mediante un estudio farmacocinético controlado que el resultado fue
+                        consecuencia de una dosis terapéutica (por inhalación) hasta la dosis máxima indicada.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4: Moduladores Hormonales y Metabólicos -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Moduladores Hormonales y Metabólicos</h5>
+                  <p class="card-text">Los moduladores hormonales y metabólicos siguientes están prohibidos.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS4"
+                    aria-expanded="false" aria-controls="collapseS4">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS4">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>1. Inhibidores de la Aromatasa:</strong></h6>
+                      <ul>
+                        <li>2-androstenol (5-androst-2-en-17-ol)</li>
+                        <li>2-androstenona (5α-androst-2-en-17-ona)</li>
+                        <li>3-androstenol (5α-androst-3-en-17-ol)</li>
+                        <li>3-androstenona (5α-androst-3-en-17-ona)</li>
+                        <li>4-androsten-3,6,17 triona (6-oxo)</li>
+                        <li>Aminoglutetimida</li>
+                        <li>Anastrozol</li>
+                        <li>Androsta-1,4,6-trien-3,17-diona (androstatriendiona)</li>
+                        <li>Androsta-3,5-dien-7,17-diona (arimistano)</li>
+                        <li>Exemestano</li>
+                        <li>Formestano</li>
+                        <li>Letrozol</li>
+                        <li>Testolactona</li>
+                      </ul>
+                      <h6><strong>2. Sustancias Anti-Estrogénicas:</strong></h6>
                       <ul>
                         <li>Bazedoxifeno</li>
                         <li>Clomifeno</li>
                         <li>Ciclofenil</li>
                         <li>Fulvestrant</li>
+                        <li>Ospemifeno</li>
+                        <li>Raloxifeno</li>
+                        <li>Tamoxifeno</li>
+                        <li>Toremifeno</li>
                       </ul>
-                    </li>
-                    <li><strong>Moduladores Metabólicos:</strong>
+                      <h6><strong>3. Agentes que Previenen la Activación del Receptor IIB de la Activina:</strong></h6>
                       <ul>
-                        <li>Activadores de AMPK</li>
+                        <li>Anticuerpos anti-receptor IIB de la activina (p. ej. bimagrumab)</li>
+                        <li>Anticuerpos neutralizantes de la activina-A</li>
+                        <li>Competidores del receptor IIB de la activina, tales como receptores señuelos de la activina
+                          (p. ej. ACE-031)</li>
+                        <li>Inhibidores de la miostatina, tales como:
+                          <ul>
+                            <li>Agentes que reducen o ablacionan la expresión de la miostatina</li>
+                            <li>Anticuerpos neutralizantes de la miostatina (p. ej. domagrozumab, landogrozumab,
+                              stamulumab)</li>
+                            <li>Proteínas ligantes de la miostatina (p. ej. folistatina, propéptido de la miostatina)
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <h6><strong>4. Moduladores Metabólicos:</strong></h6>
+                      <ul>
+                        <li>Activadores de la AMPK, p. ej. AICAR; SR9009; y agonistas del Receptor Activado por
+                          Proliferadores de Peroxisomas delta (PPARδ), p. ej. GW 1516, GW501516</li>
                         <li>Insulinas e insulino-miméticos</li>
                         <li>Meldonium</li>
+                        <li>Trimetazidina</li>
                       </ul>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Tarjeta 5: Diuréticos y Agentes Enmascarantes -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Diuréticos y Agentes Enmascarantes</h5>
-                <p class="card-text">Prohibidos por su capacidad para alterar la integridad de las pruebas antidopaje.
-                </p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS5"
-                  aria-expanded="false" aria-controls="collapseS5">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS5">
-                  <ul>
-                    <li>Desmopresina; probenecida; albúmina, dextrano, etc.</li>
-                    <li>Acetazolamida; ácido etacrínico; amilorida; bumetanida; furosemida, etc.</li>
-                  </ul>
-                  <p>Excepciones incluyen administración oftálmica tópica de inhibidores de la anhidrasa carbónica y
-                    otros.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 6: Métodos Prohibidos -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Métodos Prohibidos</h5>
-                <p class="card-text">Prohibidos por su capacidad para manipular componentes biológicos del cuerpo.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseMethods"
-                  aria-expanded="false" aria-controls="collapseMethods">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseMethods">
-                  <h6>M1. Manipulación de Sangre y Componentes Sanguíneos</h6>
-                  <ul>
-                    <li>Prohibida la administración o reintroducción de sangre autóloga, alogénica o heteróloga.</li>
-                    <li>Prohibida la mejora artificial de la captación de oxígeno.</li>
-                  </ul>
-                  <h6>M2. Manipulación Química y Física</h6>
-                  <ul>
-                    <li>Prohibida la manipulación de muestras durante el control antidopaje.</li>
-                    <li>Prohibidas infusiones intravenosas de más de 100 mL cada 12 horas.</li>
-                  </ul>
-                  <h6>M3. Dopaje Genético y de Células</h6>
-                  <ul>
-                    <li>Prohibido el uso de ácidos nucleicos que alteren la expresión genética.</li>
-                    <li>Prohibido el uso de células modificadas con potencial de mejora del rendimiento.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-section-cards" id="inCompetition" style="display: none;">
-        <div class="row">
-          <!-- Tarjeta: Estimulantes -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Estimulantes</h5>
-                <p>Todos los estimulantes, incluidos todos los isómeros ópticos, están prohibidos.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS6"
-                  aria-expanded="false" aria-controls="collapseS6">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS6">
-                  <h6>A: Estimulantes No Específicos:</h6>
-                  <ul>
-                    <li>Adrafinilo, anfetamina, cocaína, etc.</li>
-                    <li>Metanfetamina, modafinilo, etc.</li>
-                  </ul>
-                  <h6>B: Estimulantes Específicos:</h6>
-                  <ul>
-                    <li>3-metilhexan-2-amina, efedrina, pseudoefedrina, etc.</li>
-                  </ul>
-                  <p>Excepciones incluyen: Clonidina; derivados de imidazolina de uso dermatológico, nasal u oftálmico.
+            <!-- Tarjeta 5: Diuréticos y Agentes Enmascarantes -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Diuréticos y Agentes Enmascarantes</h5>
+                  <p class="card-text">Prohibidos por su capacidad para alterar la integridad de las pruebas antidopaje.
                   </p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS5"
+                    aria-expanded="false" aria-controls="collapseS5">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS5">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>Diuréticos y Agentes Enmascarantes Prohibidos:</strong></h6>
+                      <ul>
+                        <li>Desmopresina</li>
+                        <li>Probenecida</li>
+                        <li>Expansores del plasma, p. ej., albúmina, dextrano, hidroxietilalmidón, manitol
+                          (administración endovenosa)</li>
+                        <li>Acetazolamida</li>
+                        <li>Ácido etacrínico</li>
+                        <li>Amilorida</li>
+                        <li>Bumetanida</li>
+                        <li>Canrenona</li>
+                        <li>Clortalidona</li>
+                        <li>Espironolactona</li>
+                        <li>Furosemida</li>
+                        <li>Indapamida</li>
+                        <li>Metolazona</li>
+                        <li>Tiazidas, p. ej., bendroflumetiazida, clorotiazida, hidroclorotiazida</li>
+                        <li>Triamterene</li>
+                        <li>Vaptanes, p. ej., tolvaptán</li>
+                      </ul>
+                      <h6><strong>Excepciones:</strong></h6>
+                      <ul>
+                        <li>Drospirenona</li>
+                        <li>Pamabrom</li>
+                        <li>Administración oftálmica tópica de inhibidores de la anhidrasa carbónica, p. ej.,
+                          dorzolamida, brinzolamida</li>
+                        <li>Administración local de felipresina en anestesia dental</li>
+                      </ul>
+                      <p><strong>Nota:</strong> La detección en una muestra del deportista en todo momento o en
+                        competición, según corresponda, de cualquier cantidad de sustancias umbral (formoterol,
+                        salbutamol, catina, efedrina, metilefedrina, pseudoefedrina) en combinación con un diurético o
+                        agente enmascarante, será considerada como un Resultado de Análisis Anormal (RAA) a menos que el
+                        deportista posea una Autorización de Uso Terapéutico (AUT) para ambas sustancias.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 6: Métodos Prohibidos -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Manipulación de Sangre, Química y Dopaje Genético</h5>
+                  <p class="card-text">Prohibidos por su capacidad para manipular componentes biológicos del cuerpo y
+                    mejorar el rendimiento.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseMethods"
+                    aria-expanded="false" aria-controls="collapseMethods">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseMethods">
+                    <div class="text-left"> <!-- Alinea el texto a la izquierda -->
+                      <h6><strong>M1. Manipulación de Sangre y Componentes Sanguíneos</strong></h6>
+                      <ul>
+                        <li>Prohibida la administración o reintroducción de cualquier cantidad de sangre autóloga,
+                          alogénica (homóloga) o heteróloga, o de productos de hematíes de cualquier origen en el
+                          sistema circulatorio.</li>
+                        <li>Prohibida la mejora artificial de la captación, transporte o transferencia de oxígeno,
+                          incluyendo productos químicos perfluorados, efaproxiral (RSR13) y productos de hemoglobina
+                          modificada.</li>
+                        <li>Prohibida cualquier forma de manipulación intravascular de la sangre o componentes
+                          sanguíneos por medios químicos o físicos.</li>
+                      </ul>
+                      <h6><strong>M2. Manipulación Química y Física</strong></h6>
+                      <ul>
+                        <li>Prohibida la manipulación o el intento de manipulación para alterar la integridad y validez
+                          de las muestras tomadas durante el control antidopaje, incluyendo la sustitución y/o
+                          adulteración de la muestra (p. ej., adición de proteasas).</li>
+                        <li>Prohibidas las infusiones intravenosas y/o inyecciones de más de 100 mL cada 12 horas,
+                          excepto aquellas legítimamente recibidas en el curso de tratamientos hospitalarios,
+                          procedimientos quirúrgicos o exámenes diagnósticos clínicos.</li>
+                      </ul>
+                      <h6><strong>M3. Dopaje Genético y de Células</strong></h6>
+                      <ul>
+                        <li>Prohibido el uso de ácidos nucleicos o análogos de ácidos nucleicos que puedan alterar las
+                          secuencias genómicas y/o la expresión de genes por cualquier mecanismo, incluyendo tecnologías
+                          de edición de genes, silenciamiento de genes y transferencia de genes.</li>
+                        <li>Prohibido el uso de células normales o genéticamente modificadas con el potencial de mejorar
+                          el rendimiento deportivo.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-section-cards" id="inCompetition" style="display: none;">
+          <div class="row">
+            <!-- Tarjeta: Estimulantes -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Estimulantes</h5>
+                  <p>Todos los estimulantes, incluidos todos los isómeros ópticos, están prohibidos.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS6"
+                    aria-expanded="false" aria-controls="collapseS6">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS6">
+                    <h6>A: Estimulantes No Específicos:</h6>
+                    <ul>
+                      <li>Adrafinilo, anfetamina, cocaína, etc.</li>
+                      <li>Metanfetamina, modafinilo, etc.</li>
+                    </ul>
+                    <h6>B: Estimulantes Específicos:</h6>
+                    <ul>
+                      <li>3-metilhexan-2-amina, efedrina, pseudoefedrina, etc.</li>
+                    </ul>
+                    <p>Excepciones incluyen: Clonidina; derivados de imidazolina de uso dermatológico, nasal u
+                      oftálmico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta: Narcóticos -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Narcóticos</h5>
+                  <p>Prohibidos por su potencial para reducir el dolor y la fatiga, y por los riesgos de dependencia.
+                  </p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS7"
+                    aria-expanded="false" aria-controls="collapseS7">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS7">
+                    <ul>
+                      <li>Buprenorfina</li>
+                      <li>Diamorfina (heroína)</li>
+                      <li>Fentanil y sus derivados</li>
+                      <li>Morfina</li>
+                      <!-- Añade más elementos según sea necesario -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta: Cannabinoides -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Cannabinoides</h5>
+                  <p>Descripción sobre los cannabinoides prohibidos.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS8"
+                    aria-expanded="false" aria-controls="collapseS8">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS8">
+                    <p>Incluye la explicación completa de los cannabinoides y sus efectos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta: Glucocorticoides -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Glucocorticoides</h5>
+                  <p>Están prohibidos todos los glucocorticoides que se administren por ciertas vías.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS9"
+                    aria-expanded="false" aria-controls="collapseS9">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS9">
+                    <ul>
+                      <li>Injectables</li>
+                      <li>Oral (incluyendo oromucosa como bucal, gingival, sublingual)</li>
+                      <li>Rectal</li>
+                    </ul>
+                    <p>Incluye: Beclometasona, Betametasona, Budesonida, etc.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Tarjeta: Narcóticos -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Narcóticos</h5>
-                <p>Prohibidos por su potencial para reducir el dolor y la fatiga, y por los riesgos de dependencia.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS7"
-                  aria-expanded="false" aria-controls="collapseS7">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS7">
-                  <ul>
-                    <li>Buprenorfina</li>
-                    <li>Diamorfina (heroína)</li>
-                    <li>Fentanil y sus derivados</li>
-                    <li>Morfina</li>
-                    <!-- Añade más elementos según sea necesario -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta: Cannabinoides -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Cannabinoides</h5>
-                <p>Descripción sobre los cannabinoides prohibidos.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS8"
-                  aria-expanded="false" aria-controls="collapseS8">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS8">
-                  <p>Incluye la explicación completa de los cannabinoides y sus efectos.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta: Glucocorticoides -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Glucocorticoides</h5>
-                <p>Están prohibidos todos los glucocorticoides que se administren por ciertas vías.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS9"
-                  aria-expanded="false" aria-controls="collapseS9">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS9">
-                  <ul>
-                    <li>Injectables</li>
-                    <li>Oral (incluyendo oromucosa como bucal, gingival, sublingual)</li>
-                    <li>Rectal</li>
-                  </ul>
-                  <p>Incluye: Beclometasona, Betametasona, Budesonida, etc.</p>
+        <div class="content-section-cards" id="certainSports" style="display: none;">
+          <div class="row">
+            <!-- Tarjeta: Betabloqueantes -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Betabloqueantes</h5>
+                  <p>Los betabloqueantes están prohibidos en competición en ciertos deportes y también pueden estar
+                    prohibidos fuera de competición.</p>
+                  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS10"
+                    aria-expanded="false" aria-controls="collapseS10">
+                    Leer más
+                  </button>
+                  <div class="collapse mt-3" id="collapseS10">
+                    <h6>Deportes en los que están prohibidos:</h6>
+                    <ul>
+                      <li>Automovilismo (FIA)</li>
+                      <li>Billar (WCBS)</li>
+                      <li>Dardos (WDF)</li>
+                      <li>Esquí / Snowboard (FIS)</li>
+                      <li>Golf (IGF)</li>
+                      <li>Tiro (ISSF, CPI)</li>
+                      <li>Tiro con arco (WA)</li>
+                    </ul>
+                    <p><strong>Nota:</strong> Los betabloqueantes también están prohibidos fuera de competición en
+                      ciertos deportes.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -356,36 +535,6 @@
         </div>
       </div>
 
-      <div class="content-section-cards" id="certainSports" style="display: none;">
-        <div class="row">
-          <!-- Tarjeta: Betabloqueantes -->
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Betabloqueantes</h5>
-                <p>Los betabloqueantes están prohibidos en competición en ciertos deportes y también pueden estar prohibidos fuera de competición.</p>
-                <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseS10" aria-expanded="false" aria-controls="collapseS10">
-                  Leer más
-                </button>
-                <div class="collapse mt-3" id="collapseS10">
-                  <h6>Deportes en los que están prohibidos:</h6>
-                  <ul>
-                    <li>Automovilismo (FIA)</li>
-                    <li>Billar (WCBS)</li>
-                    <li>Dardos (WDF)</li>
-                    <li>Esquí / Snowboard (FIS)</li>
-                    <li>Golf (IGF)</li>
-                    <li>Tiro (ISSF, CPI)</li>
-                    <li>Tiro con arco (WA)</li>
-                  </ul>
-                  <p><strong>Nota:</strong> Los betabloqueantes también están prohibidos fuera de competición en ciertos deportes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       </div>
     </section>
   </main>

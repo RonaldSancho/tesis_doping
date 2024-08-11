@@ -7,49 +7,21 @@ function getYear() {
 
 getYear();
 
-function showContentCards(event, id) {
+function showContentCards(event, id, text) {
     event.preventDefault(); // Evitar la acción predeterminada del enlace
-
-    // Ocultar todas las secciones de contenido de tarjetas
+  
+    // Actualizar el texto introductorio
+    document.getElementById('introTextMedicationsParagraph').innerHTML = text;
+  
+    // Ocultar todas las secciones de contenido de cards
     document.querySelectorAll('.content-section-cards').forEach(section => {
-        section.style.display = 'none';
+      section.style.display = 'none';
     });
-
-    // Mostrar la sección de contenido seleccionada de tarjetas
+  
+    // Mostrar la sección de contenido seleccionada
     document.getElementById(id).style.display = 'block';
-}
+  }
 
-
-// // Mostrar el contenido basado en la categoría seleccionada
-// function showContentMedications(event, id, text, introTextId) {
-//     event.preventDefault(); // Evitar la acción predeterminada del enlace
-
-//     // Actualizar el texto introductorio adecuado basado en introTextId
-//     document.getElementById(introTextId).innerHTML = text;
-
-//     // Ocultar todas las secciones de contenido de medicamentos
-//     document.querySelectorAll('.content-section-medicamentos').forEach(section => {
-//         section.style.display = 'none';
-//     });
-
-//     // Mostrar la sección de contenido seleccionada de medicamentos
-//     document.getElementById(id).style.display = 'block';
-// }
-
-// function showContentInfections(event, id, text, introTextId) {
-//     event.preventDefault(); // Evitar la acción predeterminada del enlace
-
-//     // Actualizar el texto introductorio adecuado basado en introTextId
-//     document.getElementById(introTextId).innerHTML = text;
-
-//     // Ocultar todas las secciones de contenido de infecciones
-//     document.querySelectorAll('.content-section-infecciones').forEach(section => {
-//         section.style.display = 'none';
-//     });
-
-//     // Mostrar la sección de contenido seleccionada de infecciones
-//     document.getElementById(id).style.display = 'block';
-// }
 
 
 /** google_map js **/
