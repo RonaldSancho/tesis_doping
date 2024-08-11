@@ -586,6 +586,27 @@ a:focus {
   text-align: left;
 }
 
+#introTextMedication {
+  text-align: center;
+}
+
+#introTextMedication h2 {
+  text-align: center;
+}
+
+#introTextMedicationsParagraph {
+  text-align: center;
+}
+
+#introTextMedication .dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+#dropdownMenuButton {
+  margin: 0 auto;
+}
+
 .content-section-medicamentos {
   text-align: left;
   margin-top: 20px;
@@ -595,10 +616,10 @@ a:focus {
   background-color: #f8f8f8;
   width: 50%; /* Define el ancho máximo del content-section */
   margin-left: 100; /* Empuja el content-section hacia el lado izquierdo */
-  margin-right: auto; /* Centra el content-section si es necesario */
+  margin-right: 100; /* Centra el content-section si es necesario */
 }
 
-.content-section-infecciones {
+.content-section-medicamentos {
   text-align: left;
   margin-top: 20px;
   padding: 10px;
@@ -606,8 +627,8 @@ a:focus {
   border-radius: 8px;
   background-color: #f8f8f8;
   width: 50%; /* Define el ancho máximo del content-section */
-  margin-left: 100; /* Empuja el content-section hacia el lado izquierdo */
-  margin-right: auto; /* Centra el content-section si es necesario */
+  margin-left: auto; /* Centra el content-section */
+  margin-right: auto; /* Centra el content-section */
 }
 
 
