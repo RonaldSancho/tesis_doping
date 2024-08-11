@@ -7,38 +7,49 @@ function getYear() {
 
 getYear();
 
-
-
-// Mostrar el contenido basado en la categoría seleccionada
-function showContentMedications(event, id, text, introTextId) {
+function showContentCards(event, id) {
     event.preventDefault(); // Evitar la acción predeterminada del enlace
 
-    // Actualizar el texto introductorio adecuado basado en introTextId
-    document.getElementById(introTextId).innerHTML = text;
-
-    // Ocultar todas las secciones de contenido de medicamentos
-    document.querySelectorAll('.content-section-medicamentos').forEach(section => {
+    // Ocultar todas las secciones de contenido de tarjetas
+    document.querySelectorAll('.content-section-cards').forEach(section => {
         section.style.display = 'none';
     });
 
-    // Mostrar la sección de contenido seleccionada de medicamentos
+    // Mostrar la sección de contenido seleccionada de tarjetas
     document.getElementById(id).style.display = 'block';
 }
 
-function showContentInfections(event, id, text, introTextId) {
-    event.preventDefault(); // Evitar la acción predeterminada del enlace
 
-    // Actualizar el texto introductorio adecuado basado en introTextId
-    document.getElementById(introTextId).innerHTML = text;
+// // Mostrar el contenido basado en la categoría seleccionada
+// function showContentMedications(event, id, text, introTextId) {
+//     event.preventDefault(); // Evitar la acción predeterminada del enlace
 
-    // Ocultar todas las secciones de contenido de infecciones
-    document.querySelectorAll('.content-section-infecciones').forEach(section => {
-        section.style.display = 'none';
-    });
+//     // Actualizar el texto introductorio adecuado basado en introTextId
+//     document.getElementById(introTextId).innerHTML = text;
 
-    // Mostrar la sección de contenido seleccionada de infecciones
-    document.getElementById(id).style.display = 'block';
-}
+//     // Ocultar todas las secciones de contenido de medicamentos
+//     document.querySelectorAll('.content-section-medicamentos').forEach(section => {
+//         section.style.display = 'none';
+//     });
+
+//     // Mostrar la sección de contenido seleccionada de medicamentos
+//     document.getElementById(id).style.display = 'block';
+// }
+
+// function showContentInfections(event, id, text, introTextId) {
+//     event.preventDefault(); // Evitar la acción predeterminada del enlace
+
+//     // Actualizar el texto introductorio adecuado basado en introTextId
+//     document.getElementById(introTextId).innerHTML = text;
+
+//     // Ocultar todas las secciones de contenido de infecciones
+//     document.querySelectorAll('.content-section-infecciones').forEach(section => {
+//         section.style.display = 'none';
+//     });
+
+//     // Mostrar la sección de contenido seleccionada de infecciones
+//     document.getElementById(id).style.display = 'block';
+// }
 
 
 /** google_map js **/
