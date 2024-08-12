@@ -7,20 +7,23 @@ function getYear() {
 
 getYear();
 
-function showContentCards(event, id, text) {
+function showContentCards(event, id, title, text) {
     event.preventDefault(); // Evitar la acción predeterminada del enlace
-  
+
+    // Actualizar el texto del título h2
+    document.querySelector('#medications h2').innerHTML = title;
+
     // Actualizar el texto introductorio
     document.getElementById('introTextMedicationsParagraph').innerHTML = text;
-  
+
     // Ocultar todas las secciones de contenido de cards
     document.querySelectorAll('.content-section-cards').forEach(section => {
-      section.style.display = 'none';
+        section.style.display = 'none';
     });
-  
+
     // Mostrar la sección de contenido seleccionada
     document.getElementById(id).style.display = 'block';
-  }
+}
 
 
 
