@@ -25,6 +25,26 @@ function showContentCards(event, id, title, text) {
     document.getElementById(id).style.display = 'block';
 }
 
+function showContentInfections(event, id, title, description, paragraphId) {
+    event.preventDefault(); // Evitar la acción predeterminada del enlace
+
+    // Actualizar el título de la sección
+    document.querySelector('#afecciones h2').innerHTML = title;
+
+    // Actualizar la descripción del párrafo
+    document.getElementById(paragraphId).innerHTML = description;
+
+    // Ocultar todas las secciones de infecciones
+    document.querySelectorAll('.content-section-cards').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Mostrar la sección de contenido seleccionada
+    document.getElementById(id).style.display = 'block';
+}
+
+
+
 
 
 /** google_map js **/
