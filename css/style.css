@@ -23,21 +23,54 @@ main {
 }
 
 .footer_section {
-  background-color: #ffffff;
+  background-color: #28A745; /* Cambiado a un gris oscuro para mayor contraste */
+  color: #28a745; /* Texto blanco para mejor legibilidad */
   text-align: center;
   width: 100%;
-  padding: 25px 0;
+  padding: 10px 0; /* Incrementado el padding para más espacio */
   margin-top: auto;
-  /* This makes sure the footer stays at the bottom */
+  border-top: 5px solid #000000; /* Una línea superior verde para un toque de color */
+}
+
+.footer_section h4, .footer_section h5 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .footer_section p {
-  color: #00204a;
+  color: #ffffff; /* Texto en gris claro */
   margin: 0;
+  font-size: 1em;
 }
 
 .footer_section p a {
-  color: inherit;
+  color: #000000; /* Color verde para enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_section p a:hover {
+  color: #ffffff; /* Cambia a blanco cuando se pasa el cursor */
+}
+
+.footer_section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer_section ul li {
+  margin-bottom: 10px;
+}
+
+.footer_section ul li a {
+  color: #ffffff; /* Enlaces en gris claro */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_section ul li a:hover {
+  color: #000000; /* Verde al pasar el cursor */
 }
 
 .layout_padding {
@@ -566,23 +599,7 @@ a:focus {
   background-color: #007fa4;
 }
 
-/* footer section*/
-.footer_section {
-  background-color: #ffffff;
-  text-align: center;
-  position: relative;
-  width: 100%;
-}
 
-.footer_section p {
-  color: #00204a;
-  padding: 25px 0;
-  margin: 0;
-}
-
-.footer_section p a {
-  color: inherit;
-}
 
 /*# sourceMappingURL=style.css.map */
 
