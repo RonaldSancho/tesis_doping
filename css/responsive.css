@@ -106,3 +106,27 @@
     max-width: 1170px;
   }
 }
+
+@media (max-width: 576px) {
+  /* Añadir margen inferior a las secciones para dar espacio al footer */
+  .content-section-cards,
+  .content-section-infecciones {
+    margin-bottom: 40px; /* Ajusta según sea necesario */
+  }
+
+  .footer_section {
+    padding: 20px 0; /* Reduce el padding si es necesario para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Espaciado adicional en pantallas pequeñas-medias */
+  .content-section-cards,
+  .content-section-infecciones {
+    margin-bottom: 50px; /* Aumenta el margen inferior */
+  }
+
+  .footer_section {
+    padding: 30px 0; /* Ajusta el padding del footer */
+  }
+}

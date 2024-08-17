@@ -23,29 +23,29 @@ main {
 }
 
 .footer_section {
-  background-color: #28A745; /* Cambiado a un gris oscuro para mayor contraste */
-  color: #28a745; /* Texto blanco para mejor legibilidad */
+  background-color: #28A745; /* Color de fondo verde */
+  color: #ffffff; /* Texto blanco */
   text-align: center;
   width: 100%;
-  padding: 10px 0; /* Incrementado el padding para más espacio */
-  margin-top: auto;
-  border-top: 5px solid #000000; /* Una línea superior verde para un toque de color */
+  padding: 20px 0; /* Ajuste del padding */
+  margin-top: 40px; /* Añadir margen superior */
+  border-top: 5px solid #000000; /* Línea superior negra */
 }
 
 .footer_section h4, .footer_section h5 {
   color: #ffffff;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer_section p {
-  color: #ffffff; /* Texto en gris claro */
+  color: #ffffff; /* Texto en blanco */
   margin: 0;
   font-size: 1em;
 }
 
 .footer_section p a {
-  color: #000000; /* Color verde para enlaces */
+  color: #000000; /* Enlaces en negro */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -64,7 +64,7 @@ main {
 }
 
 .footer_section ul li a {
-  color: #ffffff; /* Enlaces en gris claro */
+  color: #ffffff; /* Enlaces en blanco */
   text-decoration: none;
   transition: color 0.3s ease;
 }
